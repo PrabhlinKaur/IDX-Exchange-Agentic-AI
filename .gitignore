@@ -1,0 +1,37 @@
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+build/
+coverage/
+*.tsbuildinfo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Operating system
+.DS_Store
+
+# Editor settings
+.vscode/
+
+# Local database files and backups
+*.sql
+*.sql.gz
+*.sqlite
+*.db
+
+# Temporary files
+*.tmp
+*.bak
