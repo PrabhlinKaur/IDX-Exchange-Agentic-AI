@@ -8,6 +8,7 @@ export interface PropertyListing {
   bathrooms: string | number | null;
   squareFeet: number | null;
   propertyType: string | null;
+  photoCount?: number | null;
 }
 
 export function formatProperties(
@@ -35,6 +36,7 @@ export function formatProperties(
       `   Price: ${price}`,
       `   Beds: ${property.bedrooms ?? "N/A"} | Baths: ${baths} | Sq Ft: ${sqft}`,
       `   Type: ${property.propertyType ?? "N/A"}`,
+      `   Photos: ${property.photoCount ?? "N/A"}`,
       `   Listing ID: ${property.L_ListingID}`
     ].join("\n");
   }).join("\n\n");

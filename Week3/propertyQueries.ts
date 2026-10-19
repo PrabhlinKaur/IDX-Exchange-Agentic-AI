@@ -27,7 +27,8 @@ export async function searchProperties(
       L_Keyword2 AS bedrooms,
       LM_Dec_3 AS bathrooms,
       LM_Int2_3 AS squareFeet,
-      L_Type_ AS propertyType
+      L_Type_ AS propertyType,
+      PhotoCount AS photoCount
     FROM rets_property
     WHERE L_Status = 'Active'
   `;
